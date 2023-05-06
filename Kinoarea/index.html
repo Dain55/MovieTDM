@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/scss/style.scss">
+	<link rel="stylesheet" href="/scss/header.scss">
+	<link rel="stylesheet" href="/scss/popup.scss">
+	<title>Kinoarea</title>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<section class="first-section">
+			<div class="genres">
+				<h1>Сейчас в кино</h1>
+				<div></div>
+				<nav>
+					<p class="act_txt">Все</p>
+					<p>Боевики</p>
+					<p>Приключения</p>
+					<p>Комедии</p>
+					<p>Фантастика</p>
+					<p>Триллеры</p>
+					<p>Драма</p>
+				</nav>
+			</div>
+			<div class="movies"></div>
+			<button data-count="not-all" class="more">Все новинки</button>
+		</section>
+		<section class="trailers">
+			<div class="trailers__header header">
+				<h1 class="trailers__title trailers__title_big">Новые трейлеры</h1>
+				<a href="#" class="trailers__more">
+					<p class="trailers__more-txt">Все трейлеры</p>
+					<img class="trailers__more-icon" src="/public/icons/arrow.svg" alt="icon">
+				</a>
+			</div>
+			<div class="trailers__main">
+				<div class="trailers__vid trailers__vid_big">
+					<iframe class="trailers__iframe trailers__iframe_big" src="" frameborder="0"
+						allowfullscreen></iframe>
+					<img class="trailers_play-icon" src="/public/icons/play.svg" alt="icon">
+				</div>
+				<div class="trailers__actions">
+					<div class="trailers__share">
+						<h1 class="trailers__title trailers__title_medium">Форсаж 9</h1>
+						<img class="trailers__share-img" src="/public/images/menu.svg" alt="image">
+						<img class="trailers__share-icon" src="/public/icons/menu_icon.svg" alt="icon">
+					</div>
+					<div class="trailers__actions-items">
+						<div class="trailers__actions-item trailers__actions-item_like">
+							<img src="/public/icons/like.svg" alt="icon" class="trailers__actions-item-icon-like">
+							<div class="trailers__actions-item-txt">3 245</div>
+						</div>
+						<div class="trailers__actions-item trailers__actions-item_dislike">
+							<img src="/public/icons/like.svg" alt="icon" class="trailers__actions-item-icon-dislike">
+							<div class="trailers__actions-item-txt">420</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="trailers__footer"></div>
+		</section>
+		<section class="popular-movies">
+			<div class="popular-movies__header">
+				<h1 class="popular-movies__title">Популярные фильмы</h1>
+				<div class="popular-movies__header-dash"></div>
+				<nav class="popular-movies__nav">
+					<p class="popular-movies__nav-item">Всё время</p>
+					<p class="popular-movies__nav-item">2023</p>
+					<p class="popular-movies__nav-item popular-movies__nav-item_act">2022</p>
+					<p class="popular-movies__nav-item">2021</p>
+					<p class="popular-movies__nav-item">2020</p>
+					<p class="popular-movies__nav-item">2019</p>
+					<p class="popular-movies__nav-item">2018</p>
+				</nav>
+			</div>
+			<div class="popular-movies__slider slider">
+				<div class="popular-movies__slider-container slider-container"></div>
+				<div class="popular-movies__slider-btns slider-btns">
+					<img class="popular-movies__slider-prev slider-prev" src="/public/icons/arrow.svg" alt="icon">
+					<div class="popular-movies__slider-fraction slider-fraction">
+						<span>0</span>
+						/
+						<span>0</span>
+					</div>
+					<img class="popular-movies__slider-next slider-next" src="/public/icons/arrow.svg" alt="icon">
+				</div>
+			</div>
+		</section>
+		<section class="popular-persons">
+			<div class="popular-persons__header">
+				<h1 class="popular-persons__title">Популярные персоны</h1>
+				<nav class="popular-persons__header-nav">
+					<div class="popular-persons__nav-item popular-persons__nav-item_active">За год</div>
+					<div class="popular-persons__nav-item">За месяц</div>
+					<div class="popular-persons__nav-item">За неделю</div>
+				</nav>
+			</div>
+			<div class="popular-persons__main">
+				<div class="popular_person_cont">
+					<div class="popular-persons__box">
+						<img class="popular-persons__photo" src="" alt="image">
+						<div class="popular-persons__num">1-е место</div>
+						<div class="popular-persons__box-item">
+							<div class="popular-persons__name">Квентин Тарантино</div>
+							<div class="popular-persons__name_eng">Quentin Tarantino</div>
+							<div class="popular-persons__age">57 лет</div>
+						</div>
+					</div>
+				</div>
+				<div class="popular-persons__list">
+					<div class="popular-persons__cart">
+						<div class="popular-persons__cart-item">
+							<div class="popular-persons__name">Тинто Брасс</div>
+							<div class="popular-persons__name_eng">Tinto Brass</div>
+							<div class="popular-persons__age">87 лет</div>
+						</div>
+						<div class="popular-persons__num">3-е место</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="upcoming">
+			<div class="upcoming__header">
+				<h1 class="upcoming__title">Ожидаемые новинки</h1>
+				<div class="upcoming__slider-btns slider-btns">
+					<img class="upcoming__slider-prev slider-prev" src="/public/icons/arrow.svg" alt="icon">
+					<div class="upcoming__slider-fraction slider-fraction">
+						<span>0</span>
+						/
+						<span>0</span>
+					</div>
+					<img class="upcoming__slider-next slider-next" src="/public/icons/arrow.svg" alt="icon">
+				</div>
+			</div>
+			<div class="upcoming__slider slider">
+				<div class="upcoming__slider-container slider-container"></div>
+			</div>
+			<div class="popups"></div>
+		</section>
+		<section class="box__office">
+			<div class="upcoming__header">
+				<h1 class="upcoming__title">Кассовые сборы</h1>
+				<p>13 марта — 15 марта</p>
+				<div class="linia"></div>
+				<nav class="popular-persons__header-nav">
+					<div class="popular-persons__nav-item popular-persons__nav-item_active">За год</div>
+					<div class="popular-persons__nav-item">За месяц</div>
+					<div class="popular-persons__nav-item">За неделю</div>
+				</nav>
+			</div>
+			<div class="box-year">
+				<div>
+					<img src="./public/images/Rectangle.svg" class="image-bg">
+					
+					<h1>
+						1. Бладшот
+					</h1>
+					
+				</div>
+				<div>
+					<img src="./public/images/Rectangle(2).svg">
+					<h1>
+						2. Соник
+					</h1>
+				</div>
+				<div>
+					<img src="./public/images/Rectangle(1).svg">
+					<h1>
+						3.Вперёд
+					</h1>
+				</div>
+				<div>
+					<img src="./public/images/Rectangle 13 (3).svg">
+					<h1>
+						4. Человек
+						-невидимка
+					</h1>
+
+			
+				</div>
+				<div>
+					<img src="./public/images/Rectangle 13 (4).svg" alt="">
+					<h1>
+						5. Джентльмены
+					</h1>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="div-email">
+          
+			</div>
+		</section>
+
+	</main>
+	<footer></footer>
+	<script type="module" src="modules/main.js"></script>
+</body>
+
+</html>
